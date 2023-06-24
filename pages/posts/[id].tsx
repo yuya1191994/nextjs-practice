@@ -57,11 +57,11 @@ export const getStaticProps: GetStaticProps<PostProps> = async (context) => {
         : context.params?.id
         
     console.log(id)
-        return {
-            props: {
-                id
-            }
+    return {
+        props: {
+            id
         }
+    }
 }
 
 export default Post
