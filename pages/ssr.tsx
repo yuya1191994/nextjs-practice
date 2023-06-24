@@ -24,6 +24,7 @@ const SSR: NextPage<SSRProps> = (props) => {
 }
 
 export const getServerSideProps: GetServerSideProps<SSRProps> = async (context) => {
+    console.log(context)
     const timestamp = new Date().toLocaleString()
     const message = `${timestamp}にこのページのgetServerSidePropsが実行されました`
     console.log(message)
